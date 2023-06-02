@@ -1,0 +1,111 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: "Montserrat";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card {
+    display: flex;
+    gap: 20px;
+    background-color: white;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+@media (max-width: 767px) {
+    .card {
+        flex-direction: column;
+    }
+}
+.card .text {
+    padding: 20px;
+}
+@media (min-width: 768px) {
+    .card .mobile {
+        display: none;
+    }
+}
+.card img {
+    width: 300px;
+    border-radius: 15px 0 0 15px;
+    -webkit-border-radius: 15px 0 0 15px;
+    -moz-border-radius: 15px 0 0 15px;
+    -ms-border-radius: 15px 0 0 15px;
+    -o-border-radius: 15px 0 0 15px;
+}
+@media (max-width: 767px) {
+    .card img {
+        display: none;
+    }
+    .card .mobile {
+        display: block;
+        border-radius: 15px 15px 0 0;
+        -webkit-border-radius: 15px 15px 0 0;
+        -moz-border-radius: 15px 15px 0 0;
+        -ms-border-radius: 15px 15px 0 0;
+        -o-border-radius: 15px 15px 0 0;
+    }
+    .card h1 {
+        font-size: 25px;
+    }
+}
+.card h1 {
+    margin: 16px 0;
+    width: 250px;
+}
+.card .title {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+}
+.card .text p:nth-child(3) {
+    line-height: 1.8;
+    color: hsl(228, 12%, 48%);
+    width: 260px;
+    font-size: 14px;
+}
+.card .pricing {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+.card .pricing .price {
+    font-size: 40px;
+    font-weight: bold;
+    color: hsl(158, 36%, 37%);
+}
+.card .pricing span {
+    display: flex;
+    align-items: center;
+    color: hsl(228, 12%, 48%);
+}
+.card .button i {
+    margin-right: 10px;
+}
+.card .button {
+    width: fit-content;
+    background-color: hsl(158, 36%, 37%);
+    text-align: center;
+    color: white;
+    padding: 15px 60px;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius:10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.card .button:hover {
+    background-color: hsl(158, 36%, 25%);
+}
+.links a {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+    font-size: 11px;
+    text-align: center;
+}
